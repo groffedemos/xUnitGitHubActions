@@ -28,7 +28,8 @@ jobs:
         ls
         dotnet restore
    
-     - name: Build
+    - name: Build
       run: dotnet build --configuration Release --no-restore
+
     - name: Test
       run: dotnet test --no-restore --verbosity normal

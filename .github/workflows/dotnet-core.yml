@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 3.1.301
 
     - name: Test
-      run: dotnet test ./TesteXUnit/TesteXUnit.csproj --no-restore
+      run: dotnet test ./TesteXUnit/TesteXUnit.csproj
     
     - name: Teste final
       run: dotnet --version

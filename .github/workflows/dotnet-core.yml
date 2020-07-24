@@ -17,19 +17,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.301
-    - name: Teste
-      run: |
-        ls
-        cd TesteXUnit
-        ls
-      
-    - name: Install dependencies
-      run: |
-        ls
-        dotnet restore
-   
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
 
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test .\TesteXUnit\TesteXUnit.csproj --no-restore --verbosity normal

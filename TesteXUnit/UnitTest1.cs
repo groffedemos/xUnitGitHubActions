@@ -14,7 +14,7 @@ namespace TesteXUnit
         [Fact]
         public void Test2()
         {
-            Assert.Equal(30, 30);
+            Assert.Equal(20, 30);
         }
     }
 }
